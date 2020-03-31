@@ -1,0 +1,44 @@
+package march31;
+
+public class Ex1e
+{
+
+	//create data members
+		private int customerid;
+		private String customername;
+		private static String customeraddress;
+		private long creditcardnumber;
+		private long mobilenumber;
+		private String productname;
+		private static double price;
+		private int quantity;
+	//create parametarized constructor
+		public Ex1e(int customerid, String customername, String customeraddress, long creditcardnumber,long mobilenumber, String productname,
+				double price, int quantity) 
+		{
+			super();
+			this.customerid = customerid;
+			this.customername = customername;
+			this.customeraddress = customeraddress;
+			this.creditcardnumber = creditcardnumber;
+			this.mobilenumber=mobilenumber;
+			this.productname = productname;
+			this.price = price;
+			this.quantity = quantity;
+		}
+		public static void main(String args[])
+	{
+		Ex1 o1=new Ex1(1,"RAM","GUNTUR",756348322,798960112,"rice",50.0,2);
+		o1.displaydetails();	
+	}
+	
+	public void displaydetails() 
+	{
+		System.out.println();
+		System.out.println("customer details are:");
+		System.out.println("customer id:"+customerid+"\ncustomername:"+customername+"\ncustomeraddress:"+customeraddress+"\ncreditcardnumber:"+creditcardnumber+"\nmobilenumber:"+mobilenumber+"\nproductname:"+productname+"\nquantity:"+quantity+"\nprice:"+price);	
+	}
+
+}
+
+
